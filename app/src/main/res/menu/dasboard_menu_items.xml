@@ -1,0 +1,89 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <item
+        android:id="@+id/home"
+        android:icon="@drawable/ic_baseline_home_24"
+        android:title="Home"
+        app:actionLayout="@layout/nav_arrow" />
+
+    <group
+        android:id="@+id/home_grp"
+        android:visible="false">
+
+        <item
+            android:id="@+id/dashboard"
+            android:icon="@drawable/baseline_dashboard_24"
+            android:title="Dashboard" />
+
+        <item
+            android:id="@+id/add_task"
+            android:icon="@drawable/ic_baseline_add_box_24"
+            android:title="Add Task" />
+
+    </group>
+
+    <item
+        android:id="@+id/trainees_main"
+        android:icon="@drawable/trainees"
+        android:title="Trainees"
+        app:actionLayout="@layout/nav_arrow">
+
+    </item>
+
+    <group
+        android:id="@+id/trainees_grp"
+        android:visible="false">
+
+        <item
+            android:id="@+id/daily_journal"
+            android:icon="@drawable/ic_baseline_edit_note_24"
+            android:title="Daily Journal" />
+        <item
+            android:id="@+id/add_journal"
+            android:icon="@drawable/ic_baseline_add_box_24"
+            android:title="Add Journal" />
+
+    </group>
+
+    <item
+        android:id="@+id/add_taski"
+        android:title="Add Task"
+        android:visible="false" />
+
+    <item
+        android:id="@+id/task_management"
+        android:icon="@drawable/ic_baseline_add_task_24"
+        android:title="Management" />
+
+    <item
+        android:id="@+id/workfromhome"
+        android:icon="@drawable/ic_baseline_laptop_mac_24"
+        android:title="WorkFromHome" />
+
+    <group
+        android:id="@+id/wfh_group"
+        android:visible="false">
+        <item
+            android:id="@+id/scheules"
+            android:title="Schedules" />
+        <item
+            android:id="@+id/fillreport"
+            android:title="Fill Report" />
+        <item
+            android:id="@+id/viewreport"
+            android:title="View Report" />
+
+    </group>
+    <item
+        android:id="@+id/profile"
+        android:icon="@drawable/ic_baseline_person_24"
+        android:title="Profile" />
+    <item
+        android:id="@+id/logout"
+        android:icon="@drawable/ic_baseline_power_settings_new_24"
+        android:title="Logout" />
+
+
+</menu>
